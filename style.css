@@ -13,6 +13,14 @@ i {
   padding: 5px 5px 5px 5px;
 }
 
+i:hover {
+  color: #eca0ff;
+}
+
+.meet {
+  font-family: 'Space Mono', monospace!important;
+}
+
 /* Equal Heights */
 .row.display-flex {
   display: flex;
@@ -23,10 +31,6 @@ i {
   flex-direction: column;
 }
 /* End of Equal Heights */
-
-.digits {
-  font-size: 100px;
-}
 
 /* Marquee/Scrolling Text */
 .marquee {
@@ -219,4 +223,46 @@ ul {
 
 .smaller-text {
   font-size: 33px!important;
+}
+
+.digits {
+  padding-top: 50px;
+  font-size: 125px;
+  margin: -10px;
+}
+
+.glow {
+      box-shadow:
+    inset 0 0 10px whitesmoke,
+    inset 2px 0 16px #fff,
+    inset -2px 0 16px #fff,
+    inset 2px 0 20px #fff,
+    inset -4px 0 20px #fff,
+    0 0 50px #eca0ff,
+    -5px 0 20px #fff,
+    5px 0 20px #eca0ff!important;
+}
+
+footer {
+  margin-top: 20px;
+  background: #84ffc9;
+  border: 1px solid black;
+  width:100%;
+}
+
+.footer-text {
+  margin-left: 40px!important;
+  margin-right:40px;
+  font-size:14px;
+  padding-top:10px;
+  font-weight: 50;
+  font-family: 'Space Mono', monospace!important;
+}
+
+.credits {
+  margin-left:10px;
+  margin-right:10px;
+  font-size: 16px!important;
+  color: black;
+  font-weight:100;
 }
