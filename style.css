@@ -227,7 +227,9 @@ ul {
 
 .digits {
   padding-top: 50px;
-  font-size: 125px;
+  font-size: 120px;
+  margin-left:20px;
+  margin-right:20px;
   margin: -10px;
 }
 
