@@ -1,0 +1,222 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital@1&display=swap');
+
+body {
+  font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+
+i {
+  font-size:35px!important;
+  color:black;
+  padding: 5px 5px 5px 5px;
+}
+
+/* Equal Heights */
+.row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row.display-flex > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+/* End of Equal Heights */
+
+.digits {
+  font-size: 100px;
+}
+
+/* Marquee/Scrolling Text */
+.marquee {
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  background: #fefefe;
+  color: #333;
+}
+        
+.marquee p {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  -moz-animation: scroll-left 2s linear infinite;
+  -webkit-animation: scroll-left 2s linear infinite;
+  animation: scroll-left 20s linear infinite;
+}
+        
+@-moz-keyframes scroll-left {
+  0% {
+    -moz-transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%);
+  }
+}
+        
+@-webkit-keyframes scroll-left {
+  0% {
+    -webkit-transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
+}
+        
+@keyframes scroll-left {
+  0% {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+#marquee {
+  /* font!!! */
+  font-family: 'Space Mono', monospace;
+}
+
+/* Icon Attributes */
+.icon-image {
+  width: 80%;
+}
+
+.color-back {
+  background: url("gradient.jpg");
+  background-size: cover;
+  border: 1px solid black; 
+}
+
+.icon-name {
+  /* Padding on the top of the text */
+  padding: 5px 0px 0px 0px;
+  font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+/* Cards */
+.card {
+  border: 0;
+  height: 100%;
+}
+
+.card-info {
+  background: white;
+  width: 100%;
+}
+
+/* Normal Icon Card */
+.icon-card {
+  border: 1px solid black;
+    box-shadow:
+    inset 0 0 10px whitesmoke,
+    inset 2px 0 16px #fff,
+    inset -2px 0 16px #fff,
+    inset 2px 0 20px #fff,
+    inset -4px 0 20px #fff,
+    0 0 50px #eca0ff,
+    -5px 0 20px #fff,
+    5px 0 20px #eca0ff;
+}
+
+.icon-card, icon-drop{
+  transition:.4s;
+}
+
+.card .icon-card{
+  position: relative;
+  opacity: 1;
+  z-index: 1;
+  transform: translateY(50px);
+}
+
+/* Glow Effect & Drop */
+.card:hover .icon-card{
+  transform: translateY(0);
+}
+
+.card .icon-drop{
+  opacity: 0;
+  position: relative;
+  background: #eca0ff;
+  border: 1px solid black; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  box-sizing: border-box;
+  transform: translateY(-50px);
+}
+
+.card:hover .icon-drop{
+  opacity: 1;
+  transition: .4s;
+  transform: translateY(0);
+}
+
+/* Buttons for Cards */
+.white-btn {
+  background: white;
+  color: black;
+  border: 1px solid black;
+  margin-left: 5px;
+  width: 90%;
+}
+
+.white-btn:hover {
+  /* background: #84ffc9; */
+  background: #b9acfc;
+  color: white!important;
+  border: 1px solid black!important;
+}
+.white-btn:active {
+  background: #958acc!important;
+  color: white!important;
+  border: 1px solid black!important;
+}
+
+.purple {
+  background: #eca0ff;
+}
+
+/* Expanded Cards */
+.icon-description {
+  font-weight: 300;
+}
+
+/* Media Link Things */
+.medialink {
+  color: #00c9db;
+}
+
+.medialink:hover {
+  color: black;
+}
+
+@counter-style star {
+  system: cyclic;
+  symbols: "\2B50";
+  suffix: " ";
+}
+
+ul {
+  list-style-type: star;
+}
+
+.smaller-text {
+  font-size: 33px!important;
+}
